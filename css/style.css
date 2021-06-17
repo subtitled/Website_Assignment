@@ -1,0 +1,206 @@
+@media only screen {} /* Define mobile styles */ 
+@media only screen and (min-width: 40.063em) {} /* min-width 641px, medium screens */ 
+@media only screen and (min-width: 64.063em) {} /* min-width 1025px, large screens */ 
+@media only screen and (min-width: 90.063em) {} /* min-width 1441px, xlarge screens */ 
+@media only screen and (min-width: 120.063em) {} /* min-width 1921px, xxlarge screens */
+
+body {
+    margin: 0;
+}
+.maincontent {
+    background-color: red;
+    display: flex;
+}
+.edge{
+    background-color: green;
+    flex-grow: 1;
+}
+.middle{
+    background-color: blue;
+    flex-grow: 3;
+}
+.mid-col{
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mid-col img{
+    box-sizing: border-box;
+    width: 70%;
+}
+
+.gensearch{
+    text-align: center;
+    width: 50%;
+    padding-top: 4em;
+    
+}
+.gamesearch{
+    width:100%;
+    
+}
+#seperator{
+    padding-top: 1em;
+    padding-bottom:1em;
+}
+.popular{
+    display:flex;
+    flex-direction:row;
+    padding:1em;
+}
+.popular img{
+    box-sizing: border-box;
+    max-height: 10em;
+    width:100%;
+    border: 1px solid black;
+    padding: 5px;
+}
+.newest{
+    display:flex;
+    flex-direction:row;
+    padding:1em;
+}
+.newest img{
+    box-sizing: border-box;
+    max-height: 10em;
+    width:100%;
+    border: 1px solid black;
+    padding: 5px;
+}
+.subtitle {
+    display:flex;
+    justify-content: center;
+}
+.subtitle img{
+    box-sizing:border-box;
+    width: 50%;
+}
+input[type=text], input[type=password], textarea{
+    width:90%;
+    padding:.5em;
+    border:1px solid black;
+    border-radius: 3px;
+    resize: vertical;
+}
+input[type=date]{
+    padding:.5em;
+    border:1px solid black;
+    border-radius: 3px;
+    resize: vertical;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+.namecol{
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.inpcol{
+    float:left;
+    width:75%;
+    margin-top: 6px;
+}
+
+
+input[type=submit], select{
+    padding: .5em;
+    border:none;
+    border-radius:3px;
+    cursor: pointer;
+    margin-top: .5em;
+}
+input[type=number]{
+    -moz-appearance: textfield;
+    padding:.5em;
+    border:1px solid black;
+    border-radius: 3px;
+    resize: vertical;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.galcol{
+    display:flex;
+    flex-direction:row;
+    padding:1em;
+}
+.galcol img{
+    opacity:0.8;
+    cursor:pointer;
+    box-sizing: border-box;
+    max-height: 10em;
+    width:100%;
+    border: 1px solid black;
+    padding: 5px;
+}
+.galcol img:hover{
+    opacity: 1;
+}
+.galexpand{
+    position:relative;
+    display:none;
+    width:25%;
+}
+.close{
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 15px;
+    font-size: 35px;
+    cursor:pointer;
+}
+.formrow:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+.mid-col dl{
+    display: flex;
+    flex-flow: row wrap;
+}
+.mid-col dt {
+    flex-basis: 30%;
+    padding:2px 4px;
+    text-align: right;
+    font-weight: bold;
+}
+.mid-col dd {
+    flex-basis: 60%;
+    flex-grow:1;
+    margin:0;
+    padding:2px 4px;
+}
+.srchresult img{
+    display:block;
+    width:50%;
+}
+.srchresult table, th, td {
+    border: 1px solid black;
+}
+@media only screen and (max-width: 705px) {
+    .mid-col img{
+        width: 90%;
+    }
+    .gensearch{
+        padding-top:2em;
+        width:70%;
+    }
+    .popular img{
+        max-height: 7em;
+    }
+    .newest img{
+        max-height: 7em;
+    }
+    .subtitle img{
+        width:60%
+    }
+    .namecol, .inpcol{
+        width:100%;
+        margin-top: 0;
+    }
+}

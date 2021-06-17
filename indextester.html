@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> GameTradez </title>
+        <link rel="stylesheet" type="text/css" href="css/navigation.css"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    </head>
+    <body>
+        <div id="page">
+            <nav>
+                <div class= "topnav" id="navbar">
+                    <a href="index.html" class="active"> Home </a>
+                    <a href="search.html"> Search </a>
+                    <a href="newpost.html"> Post </a>
+                    <a href="pricesub.html"> Price Submission </a>
+                    <a href="account.html"> Account </a>
+                    <a href="contact.html"> Contact Us </a>
+                    <a href="signup.html"> Sign Up </a>
+                    <a href="login.html"> Login </a>
+                    <a href="javascript:void(0);" class="icon" onClick="myNavBar()">
+                </div>
+            </nav>
+            <div class="maincontent">
+                <div class='edge'> Test 1 </div>
+                <div class='middle'> Test 2 </div>
+                <div class='edge'> Test 3 </div>
+            </div>
+        </div>
+        <script>
+            function myNavBar() {
+            var x = document.getElementById("navbar");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+            }
+        </script>
+    </body>
+</html>
